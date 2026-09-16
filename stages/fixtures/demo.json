@@ -1,0 +1,610 @@
+[
+{
+  "model": "stages.competence",
+  "pk": 1,
+  "fields": {
+    "libelle": "Python"
+  }
+},
+{
+  "model": "stages.competence",
+  "pk": 2,
+  "fields": {
+    "libelle": "Django"
+  }
+},
+{
+  "model": "stages.competence",
+  "pk": 3,
+  "fields": {
+    "libelle": "SQL"
+  }
+},
+{
+  "model": "stages.competence",
+  "pk": 4,
+  "fields": {
+    "libelle": "HTML et CSS"
+  }
+},
+{
+  "model": "stages.competence",
+  "pk": 5,
+  "fields": {
+    "libelle": "JavaScript"
+  }
+},
+{
+  "model": "stages.competence",
+  "pk": 6,
+  "fields": {
+    "libelle": "Git"
+  }
+},
+{
+  "model": "stages.competence",
+  "pk": 7,
+  "fields": {
+    "libelle": "Linux"
+  }
+},
+{
+  "model": "stages.competence",
+  "pk": 8,
+  "fields": {
+    "libelle": "Réseaux"
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 1,
+  "fields": {
+    "nom": "Mensah",
+    "prenom": "Afi",
+    "sexe": "F",
+    "date_naissance": "2004-02-14",
+    "email": "afi.mensah@etudiant.ifnti.example",
+    "matricule": "IFNTI-2024-001",
+    "promotion": 2027,
+    "competences": [
+      2,
+      6,
+      1
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 2,
+  "fields": {
+    "nom": "Agbéko",
+    "prenom": "Kossi",
+    "sexe": "M",
+    "date_naissance": "2003-07-30",
+    "email": "kossi.agbeko@etudiant.ifnti.example",
+    "matricule": "IFNTI-2024-002",
+    "promotion": 2027,
+    "competences": [
+      7,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 3,
+  "fields": {
+    "nom": "Kpodar",
+    "prenom": "Abla",
+    "sexe": "F",
+    "date_naissance": "2004-05-09",
+    "email": "abla.kpodar@etudiant.ifnti.example",
+    "matricule": "IFNTI-2024-003",
+    "promotion": 2027,
+    "competences": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 4,
+  "fields": {
+    "nom": "Adjakly",
+    "prenom": "Komlan",
+    "sexe": "M",
+    "date_naissance": "2003-10-01",
+    "email": "komlan.adjakly@etudiant.ifnti.example",
+    "matricule": "IFNTI-2024-004",
+    "promotion": 2027,
+    "competences": [
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 5,
+  "fields": {
+    "nom": "Tchalla",
+    "prenom": "Yawa",
+    "sexe": "F",
+    "date_naissance": "2004-12-19",
+    "email": "yawa.tchalla@etudiant.ifnti.example",
+    "matricule": "IFNTI-2024-005",
+    "promotion": 2027,
+    "competences": [
+      2,
+      6,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 6,
+  "fields": {
+    "nom": "Dossou",
+    "prenom": "Mawuli",
+    "sexe": "M",
+    "date_naissance": "2004-03-22",
+    "email": "mawuli.dossou@etudiant.ifnti.example",
+    "matricule": "IFNTI-2024-006",
+    "promotion": 2027,
+    "competences": [
+      6,
+      5
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 7,
+  "fields": {
+    "nom": "Amégee",
+    "prenom": "Akouvi",
+    "sexe": "F",
+    "date_naissance": "2003-08-11",
+    "email": "akouvi.amegee@etudiant.ifnti.example",
+    "matricule": "IFNTI-2023-007",
+    "promotion": 2026,
+    "competences": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 8,
+  "fields": {
+    "nom": "Tchédré",
+    "prenom": "Pakabalo",
+    "sexe": "M",
+    "date_naissance": "2002-01-27",
+    "email": "pakabalo.tchedre@etudiant.ifnti.example",
+    "matricule": "IFNTI-2023-008",
+    "promotion": 2026,
+    "competences": [
+      6,
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 9,
+  "fields": {
+    "nom": "Lawson",
+    "prenom": "Enyonam",
+    "sexe": "F",
+    "date_naissance": "2003-06-05",
+    "email": "enyonam.lawson@etudiant.ifnti.example",
+    "matricule": "IFNTI-2023-009",
+    "promotion": 2026,
+    "competences": [
+      4,
+      1
+    ]
+  }
+},
+{
+  "model": "stages.etudiant",
+  "pk": 10,
+  "fields": {
+    "nom": "Bakali",
+    "prenom": "Tchilalo",
+    "sexe": "M",
+    "date_naissance": "2004-09-13",
+    "email": "tchilalo.bakali@etudiant.ifnti.example",
+    "matricule": "IFNTI-2024-010",
+    "promotion": 2027,
+    "competences": []
+  }
+},
+{
+  "model": "stages.entreprise",
+  "pk": 1,
+  "fields": {
+    "nom": "Cabinet Zongo",
+    "ville": "Sokodé",
+    "secteur": "Comptabilité",
+    "contact": "contact@cabinet-zongo.example"
+  }
+},
+{
+  "model": "stages.entreprise",
+  "pk": 2,
+  "fields": {
+    "nom": "Sokodé Numérique",
+    "ville": "Sokodé",
+    "secteur": "Services informatiques",
+    "contact": "contact@sokode-numerique.example"
+  }
+},
+{
+  "model": "stages.entreprise",
+  "pk": 3,
+  "fields": {
+    "nom": "Tchaoudjo Logistique",
+    "ville": "Sokodé",
+    "secteur": "Transport",
+    "contact": "contact@tchaoudjo-logistique.example"
+  }
+},
+{
+  "model": "stages.entreprise",
+  "pk": 4,
+  "fields": {
+    "nom": "Kara Solaire",
+    "ville": "Kara",
+    "secteur": "Énergie",
+    "contact": "contact@kara-solaire.example"
+  }
+},
+{
+  "model": "stages.entreprise",
+  "pk": 5,
+  "fields": {
+    "nom": "Lomé Data Services",
+    "ville": "Lomé",
+    "secteur": "Hébergement",
+    "contact": "contact@lome-data-services.example"
+  }
+},
+{
+  "model": "stages.entreprise",
+  "pk": 6,
+  "fields": {
+    "nom": "Plateau Microfinance",
+    "ville": "Atakpamé",
+    "secteur": "Finance",
+    "contact": "contact@plateau-microfinance.example"
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 1,
+  "fields": {
+    "entreprise": 2,
+    "titre": "Développeur Django junior",
+    "description": "Stage de fin d'études : développeur django junior.",
+    "date_debut": "2027-04-05",
+    "date_fin": "2027-06-25",
+    "nb_places": 2,
+    "competences": [
+      2,
+      6,
+      1
+    ]
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 2,
+  "fields": {
+    "entreprise": 1,
+    "titre": "Automatisation de la facturation",
+    "description": "Stage de fin d'études : automatisation de la facturation.",
+    "date_debut": "2027-04-05",
+    "date_fin": "2027-06-11",
+    "nb_places": 1,
+    "competences": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 3,
+  "fields": {
+    "entreprise": 5,
+    "titre": "Supervision du parc de serveurs",
+    "description": "Stage de fin d'études : supervision du parc de serveurs.",
+    "date_debut": "2027-04-12",
+    "date_fin": "2027-07-02",
+    "nb_places": 1,
+    "competences": [
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 4,
+  "fields": {
+    "entreprise": 4,
+    "titre": "Tableau de bord de production solaire",
+    "description": "Stage de fin d'études : tableau de bord de production solaire.",
+    "date_debut": "2027-04-12",
+    "date_fin": "2027-06-25",
+    "nb_places": 1,
+    "competences": [
+      5,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 5,
+  "fields": {
+    "entreprise": 6,
+    "titre": "Refonte du site vitrine",
+    "description": "Stage de fin d'études : refonte du site vitrine.",
+    "date_debut": "2027-05-03",
+    "date_fin": "2027-06-25",
+    "nb_places": 1,
+    "competences": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 6,
+  "fields": {
+    "entreprise": 3,
+    "titre": "Suivi des tournées de livraison",
+    "description": "Stage de fin d'études : suivi des tournées de livraison.",
+    "date_debut": "2026-04-06",
+    "date_fin": "2026-06-26",
+    "nb_places": 1,
+    "competences": [
+      2,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 1,
+  "fields": {
+    "etudiant": 1,
+    "offre": 1,
+    "date_depot": "2026-09-16",
+    "statut": "retenue"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 2,
+  "fields": {
+    "etudiant": 5,
+    "offre": 1,
+    "date_depot": "2026-09-16",
+    "statut": "retenue"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 3,
+  "fields": {
+    "etudiant": 2,
+    "offre": 1,
+    "date_depot": "2026-09-16",
+    "statut": "refusee"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 4,
+  "fields": {
+    "etudiant": 2,
+    "offre": 3,
+    "date_depot": "2026-09-16",
+    "statut": "retenue"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 5,
+  "fields": {
+    "etudiant": 4,
+    "offre": 3,
+    "date_depot": "2026-09-16",
+    "statut": "refusee"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 6,
+  "fields": {
+    "etudiant": 3,
+    "offre": 5,
+    "date_depot": "2026-09-16",
+    "statut": "deposee"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 7,
+  "fields": {
+    "etudiant": 6,
+    "offre": 5,
+    "date_depot": "2026-09-16",
+    "statut": "deposee"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 8,
+  "fields": {
+    "etudiant": 6,
+    "offre": 4,
+    "date_depot": "2026-09-16",
+    "statut": "deposee"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 9,
+  "fields": {
+    "etudiant": 5,
+    "offre": 2,
+    "date_depot": "2026-09-16",
+    "statut": "refusee"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 10,
+  "fields": {
+    "etudiant": 7,
+    "offre": 6,
+    "date_depot": "2026-09-16",
+    "statut": "retenue"
+  }
+},
+{
+  "model": "stages.candidature",
+  "pk": 11,
+  "fields": {
+    "etudiant": 9,
+    "offre": 6,
+    "date_depot": "2026-09-16",
+    "statut": "refusee"
+  }
+},
+{
+  "model": "stages.enseignantreferent",
+  "pk": 1,
+  "fields": {
+    "nom": "Akakpo",
+    "prenom": "Nadège",
+    "sexe": "F",
+    "date_naissance": "1982-09-17",
+    "email": "nadege.akakpo@ifnti.example"
+  }
+},
+{
+  "model": "stages.enseignantreferent",
+  "pk": 2,
+  "fields": {
+    "nom": "Amouzou",
+    "prenom": "Folly",
+    "sexe": "M",
+    "date_naissance": "1976-04-03",
+    "email": "folly.amouzou@ifnti.example"
+  }
+},
+{
+  "model": "stages.enseignantreferent",
+  "pk": 3,
+  "fields": {
+    "nom": "Ouro-Djobo",
+    "prenom": "Ibrahim",
+    "sexe": "M",
+    "date_naissance": "1985-12-21",
+    "email": "ibrahim.ouro-djobo@ifnti.example"
+  }
+},
+{
+  "model": "stages.tuteurentreprise",
+  "pk": 1,
+  "fields": {
+    "nom": "Kouassi",
+    "prenom": "Ayélé",
+    "sexe": "F",
+    "date_naissance": "1984-03-12",
+    "email": "ayele.kouassi@tuteur.example",
+    "entreprise": 2
+  }
+},
+{
+  "model": "stages.tuteurentreprise",
+  "pk": 2,
+  "fields": {
+    "nom": "Attiogbé",
+    "prenom": "Kodjo",
+    "sexe": "M",
+    "date_naissance": "1979-11-02",
+    "email": "kodjo.attiogbé@tuteur.example",
+    "entreprise": 5
+  }
+},
+{
+  "model": "stages.tuteurentreprise",
+  "pk": 3,
+  "fields": {
+    "nom": "Pali",
+    "prenom": "Essowè",
+    "sexe": "M",
+    "date_naissance": "1988-06-25",
+    "email": "essowe.pali@tuteur.example",
+    "entreprise": 4
+  }
+},
+{
+  "model": "stages.tuteurentreprise",
+  "pk": 4,
+  "fields": {
+    "nom": "Sossou",
+    "prenom": "Adjoa",
+    "sexe": "F",
+    "date_naissance": "1990-01-08",
+    "email": "adjoa.sossou@tuteur.example",
+    "entreprise": 6
+  }
+},
+{
+  "model": "stages.stage",
+  "pk": 1,
+  "fields": {
+    "candidature": 1,
+    "tuteur_entreprise": 1,
+    "enseignant_referent": 1,
+    "sujet": "Portail de prise de rendez-vous"
+  }
+},
+{
+  "model": "stages.stage",
+  "pk": 2,
+  "fields": {
+    "candidature": 2,
+    "tuteur_entreprise": 1,
+    "enseignant_referent": 2,
+    "sujet": "API de suivi des interventions"
+  }
+},
+{
+  "model": "stages.stage",
+  "pk": 3,
+  "fields": {
+    "candidature": 4,
+    "tuteur_entreprise": 2,
+    "enseignant_referent": 3,
+    "sujet": "Alertes de supervision Prometheus"
+  }
+}
+]

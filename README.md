@@ -26,9 +26,10 @@ travaille ainsi sur la même version, donc sur les mêmes messages d'erreur.
 git clone https://github.com/vianney-g/ifnti_django_projet.git
 cd ifnti_django_projet
 uv sync                                   # crée l'environnement et installe les dépendances
-uv run python manage.py migrate           # crée la base SQLite locale
-uv run python manage.py createsuperuser   # votre compte d'administration
-uv run python manage.py runserver
+uv run manage.py migrate                  # crée la base SQLite locale
+uv run manage.py loaddata demo            # facultatif : un jeu de données de démonstration
+uv run manage.py createsuperuser          # votre compte d'administration
+uv run manage.py runserver
 ```
 
 Puis <http://localhost:8000/entreprises/> pour la liste, <http://localhost:8000/admin/> pour
@@ -66,6 +67,10 @@ comprenez, et la soutenance de fin de semestre porte sur *votre* dépôt et *vot
 
 ## État du dépôt
 
-Le code s'arrête à la fin de la séance Mise en route : un projet Django, une application
-`stages`, le modèle `Entreprise` visible dans l'administration, et une première vue qui en
-affiche la liste. Les tags suivants arrivent au fil des séances.
+Le code s'arrête à la fin de la séance Modéliser le domaine : le modèle de données du suivi des
+stages, découpé en un fichier par modèle dans `stages/models/`, entièrement administrable.
+La convention de stage et l'évaluation arriveront plus tard, avec les séances qui en ont besoin.
+
+`uv run manage.py loaddata demo` charge des entreprises, des étudiants, des offres et quelques
+stages fictifs, pour travailler sur une base qui ne soit pas vide. Les tags suivants arrivent au
+fil des séances.
