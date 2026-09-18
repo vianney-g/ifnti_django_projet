@@ -32,8 +32,8 @@ uv run manage.py createsuperuser          # votre compte d'administration
 uv run manage.py runserver
 ```
 
-Puis <http://localhost:8000/entreprises/> pour la liste, <http://localhost:8000/admin/> pour
-l'administration.
+Puis <http://localhost:8000/> pour les offres de stage, <http://localhost:8000/entreprises/>
+pour les entreprises partenaires, et <http://localhost:8000/admin/> pour l'administration.
 
 Les tests :
 
@@ -67,8 +67,9 @@ comprenez, et la soutenance de fin de semestre porte sur *votre* dépôt et *vot
 
 ## État du dépôt
 
-Le code s'arrête à la fin de la séance Modéliser le domaine : le modèle de données du suivi des
-stages, découpé en un fichier par modèle dans `stages/models/`, entièrement administrable.
+Le code s'arrête à la fin de la séance Vues, URLs, templates : le modèle de données du suivi des
+stages dans `stages/models/`, entièrement administrable, et quatre pages publiques — la liste et
+le détail des offres, la liste et le détail des entreprises — bâties sur un gabarit commun.
 La convention de stage et l'évaluation arriveront plus tard, avec les séances qui en ont besoin.
 
 `uv run manage.py loaddata demo` charge des entreprises, des étudiants, des offres et quelques

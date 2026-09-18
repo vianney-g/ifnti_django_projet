@@ -387,6 +387,56 @@
   }
 },
 {
+  "model": "stages.offre",
+  "pk": 7,
+  "fields": {
+    "entreprise": 2,
+    "titre": "Application mobile de suivi des stages",
+    "description": "Stage de fin d'études : application mobile de suivi des stages.",
+    "date_debut": "2027-04-05",
+    "date_fin": "2027-06-25",
+    "nb_places": 1,
+    "competences": [
+      2,
+      6,
+      1
+    ]
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 8,
+  "fields": {
+    "entreprise": 2,
+    "titre": "Migration du parc vers Linux",
+    "description": "Stage de fin d'études : migration du parc vers linux.",
+    "date_debut": "2027-04-12",
+    "date_fin": "2027-07-02",
+    "nb_places": 2,
+    "competences": [
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "stages.offre",
+  "pk": 9,
+  "fields": {
+    "entreprise": 2,
+    "titre": "Portail client en libre-service",
+    "description": "Stage de fin d'études : portail client en libre-service.",
+    "date_debut": "2027-05-03",
+    "date_fin": "2027-07-16",
+    "nb_places": 1,
+    "competences": [
+      2,
+      4,
+      5
+    ]
+  }
+},
+{
   "model": "stages.candidature",
   "pk": 1,
   "fields": {

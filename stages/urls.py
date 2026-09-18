@@ -5,5 +5,8 @@ from . import views
 app_name = "stages"
 
 urlpatterns = [
+    path("", views.liste_offres, name="liste_offres"),
+    path("offres/<int:pk>/", views.detail_offre, name="detail_offre"),
     path("entreprises/", views.liste_entreprises, name="liste_entreprises"),
+    path("entreprises/<int:pk>/", views.detail_entreprise, name="detail_entreprise"),
 ]

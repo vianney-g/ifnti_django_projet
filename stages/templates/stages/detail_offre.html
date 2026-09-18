@@ -1,0 +1,32 @@
+{% extends "stages/base.html" %}
+
+{% block titre %}{{ offre.titre }}{% endblock %}
+
+{% block contenu %}
+  <h1>{{ offre.titre }}</h1>
+
+  <p class="chapeau">
+    Proposé par
+    <a href="{% url 'stages:detail_entreprise' offre.entreprise.pk %}">{{ offre.entreprise.nom }}</a>,
+    à {{ offre.entreprise.ville }}.
+  </p>
+
+  <dl>
+    <dt>Période</dt><dd>du {{ offre.date_debut }} au {{ offre.date_fin }}</dd>
+    <dt>Places</dt><dd>{{ offre.nb_places }}</dd>
+    <dt>Candidatures reçues</dt><dd>{{ candidatures }}</dd>
+    <dt>Compétences demandées</dt>
+    <dd>
+      {% for competence in offre.competences.all %}
+        <span class="etiquette">{{ competence.libelle }}</span>
+      {% empty %}
+        <span class="discret">aucune précisée</span>
+      {% endfor %}
+    </dd>
+  </dl>
+
+  <h2>Description</h2>
+  <p>{{ offre.description }}</p>
+
+  <p><a href="{% url 'stages:liste_offres' %}">Retour aux offres</a></p>
+{% endblock %}

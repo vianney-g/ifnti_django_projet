@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Entreprises partenaires</title>
-  </head>
-  <body>
-    <h1>Entreprises partenaires</h1>
-    <ul>
-      {% for entreprise in entreprises %}
-        <li>{{ entreprise.nom }} — {{ entreprise.ville }} ({{ entreprise.secteur }})</li>
-      {% empty %}
-        <li>Aucune entreprise enregistrée pour le moment.</li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{% extends "stages/base.html" %}
+
+{% block titre %}Entreprises partenaires{% endblock %}
+
+{% block contenu %}
+  <h1>Entreprises partenaires</h1>
+
+  <ul>
+    {% for entreprise in entreprises %}
+      <li>
+        <a href="{% url 'stages:detail_entreprise' entreprise.pk %}">{{ entreprise.nom }}</a>
+        — {{ entreprise.ville }} ({{ entreprise.secteur }})
+      </li>
+    {% empty %}
+      <li class="discret">Aucune entreprise enregistrée pour le moment.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

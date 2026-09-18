@@ -1,0 +1,26 @@
+{% extends "stages/base.html" %}
+
+{% block titre %}{{ entreprise.nom }}{% endblock %}
+
+{% block contenu %}
+  <h1>{{ entreprise.nom }}</h1>
+
+  <p class="chapeau">{{ entreprise.secteur }} — {{ entreprise.ville }}</p>
+
+  <h2>Offres publiées</h2>
+  <ul>
+    {% for offre in offres %}
+      <li>
+        <a href="{% url 'stages:detail_offre' offre.pk %}">{{ offre.titre }}</a>
+        — {{ offre.nb_places }} place{{ offre.nb_places|pluralize }}
+        {% for competence in offre.competences.all %}
+          <span class="etiquette">{{ competence.libelle }}</span>
+        {% endfor %}
+      </li>
+    {% empty %}
+      <li class="discret">Cette entreprise n'a publié aucune offre.</li>
+    {% endfor %}
+  </ul>
+
+  <p><a href="{% url 'stages:liste_entreprises' %}">Retour aux entreprises</a></p>
+{% endblock %}
